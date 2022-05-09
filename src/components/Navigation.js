@@ -3,11 +3,14 @@ import { Link } from 'react-router-dom';
 
 const Navigation = () => {
     return (
-        <nav className='relative flex items-center justify-between text-white font-roboto w-full max-w-screen-lg px-5 py-5 mx-auto'>
-            <Link to="/about">About</Link>
-            <Link to="/portfolio">Portfolio</Link>
-            <Link to="/resume">Resume</Link>
-            <Link to="/contact">Contact</Link>
+        <nav className='relative flex items-center justify-between font-roboto w-full max-w-screen-lg px-5 py-5 mx-auto'>
+            <Link to="/" className='text-2xl uppercase'>Alex McKay</Link>
+            <div className='flex justify-around'>
+                <Link to="/about" className='p-4 hover:transition hover:translate-y-2 duration-500 ease-in-out'>About</Link>
+                <Link to="/portfolio" className='p-4 hover:transition hover:translate-y-2 duration-500 ease-in-out'>Portfolio</Link>
+                <Link to="/resume" className='p-4 hover:transition hover:translate-y-2 duration-500 ease-in-out'>Resume</Link>
+                <Link to="/contact" className='p-4 hover:transition hover:translate-y-2 duration-500 ease-in-out'>Contact</Link>
+            </div>
         </nav>
       );
 }

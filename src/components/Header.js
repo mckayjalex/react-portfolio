@@ -3,7 +3,7 @@ import Navigation from './Navigation.js';
 
 const Header = () => {
     return (
-        <section className='fixed bg-opacity-50 z-10 top-0 w-full bg-gray-900 shadow-sm'>
+        <section className='fixed bg-opacity-50 z-10 top-0 w-full shadow-sm'>
             <Navigation />
         </section>
     );

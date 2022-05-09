@@ -6,7 +6,7 @@ module.exports = {
       extend: {
         fontFamily: {
          roboto: 'Roboto'
-        },
+        }
       },
     },
   plugins: [],
