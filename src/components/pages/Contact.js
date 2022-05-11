@@ -3,8 +3,8 @@ import React from 'react';
 function Contact() {
 
     return (
-        <div className='flex justify-center items-center'>
-            <form className="w-full max-w-lg mt-32">
+        <div className='bg-gray-400 flex h-screen justify-center items-center'>
+            <form className="w-full max-w-lg mt-12">
                 <div className="flex flex-wrap -mx-3 mb-6">
                     <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
@@ -27,7 +27,7 @@ function Contact() {
                         <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" />
                     </div>
                 </div>
-                <div className="flex flex-wrap -mx-3 mb-6">
+                <div className="flex flex-wrap -mx-3">
                     <div className="w-full px-3">
                         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
                             Message
@@ -37,7 +37,7 @@ function Contact() {
                 </div>
                 <div className="md:flex md:items-center">
                     <div className="md:w-1/3">
-                        <button className="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                        <button className="shadow hover:shadow-inner bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
                             Send
                         </button>
                     </div>

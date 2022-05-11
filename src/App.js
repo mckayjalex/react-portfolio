@@ -7,18 +7,19 @@ import About from './components/pages/About.js';
 import Contact from './components/pages/Contact.js';
 import Portfolio from './components/pages/Portfolio.js';
 import Resume from './components/pages/Resume.js';
+import Footer from './components/Footer.js';
 
 const App = () => {
     return (
-      <div>
+      <div className='font-roboto'>
         <Router>
           <Header />
             <Routes>
                 <Route path="/" element={<Home />}/>
-                <Route path="/about" element={<About />}/>
-                <Route path="/portfolio" element={<Portfolio />}/>
-                <Route path="/resume" element={<Resume />}/>
-                <Route path="/contact" element={<Contact />}/>
+                <Route path="/about" element={<div><About /><Footer /></div>}/>
+                <Route path="/portfolio" element={<div><Portfolio /><Footer /></div>}/>
+                <Route path="/resume" element={<div><Resume /><Footer /></div>}/>
+                <Route path="/contact" element={<div><Contact /><Footer /></div>}/>
             </Routes>
         </Router>
       </div>

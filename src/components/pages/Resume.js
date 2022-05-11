@@ -1,49 +1,32 @@
 import React from 'react';
+import resume from './assets/files/alex-mckay-resume.pdf'
 
 function Resume() {
 
     return (
-        <div className='flex justify-center items-center'>
-            <form class="w-full max-w-lg mt-32">
-                <div class="flex flex-wrap -mx-3 mb-6">
-                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-                            First Name
-                        </label>
-                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane" />
-                    </div>
-                    <div class="w-full md:w-1/2 px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
-                            Last Name
-                        </label>
-                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" />
-                    </div>
+        <div className='h-screen bg-gray-200 pt-32 sahdow flex justify-center items-start'>
+            <div className='p-4 bg-white shadow w-2/3 rounded'>
+                <div className='flex justify-between'>
+                    <h2 className='pl-4 text-xl underline underline-offset-4'>SUMMARY</h2>
+                    <a href={resume} className="shadow hover:shadow-inner bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded " download>
+                            Download
+                        </a>
                 </div>
-                <div class="flex flex-wrap -mx-3 mb-6">
-                    <div class="w-full px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
-                            E-mail
-                        </label>
-                        <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" />
-                    </div>
-                </div>
-                <div class="flex flex-wrap -mx-3 mb-6">
-                    <div class="w-full px-3">
-                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
-                            Message
-                        </label>
-                        <textarea class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message"></textarea>
-                    </div>
-                </div>
-                <div class="md:flex md:items-center">
-                    <div class="md:w-1/3">
-                        <button class="shadow bg-teal-400 hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
-                            Send
-                        </button>
-                    </div>
-                    <div class="md:w-2/3"></div>
-                </div>
-            </form>
+                <p className='p-4'>Passionate to build technical solutions to complex problems</p>
+                <h2 className='pl-4 text-xl underline underline-offset-4'>SKILLS</h2>
+                <ul className='p-4'>
+                    <li><span className='font-bold text-lg'>Frontend:</span> React, JavaScript, CSS3, HTML5</li>
+                    <li><span className='font-bold text-lg'>Backend:</span> Node.js, Express.js</li>
+                    <li><span className='font-bold text-lg'>Database:</span> MySQL, MongoDB & GraphQL</li>
+                    <li><span className='font-bold text-lg'>Other Frameworks / Libraries:</span> Bootstrap, Tailwind CSS, jQuery, sequelize, mongoose</li>
+                    <li><span className='font-bold text-lg'>Other:</span> Git, Heroku, OOP, Algorithms & Data Structures, System integrations using APIs</li>
+                </ul>
+                <h2 className='pl-4 text-xl underline underline-offset-4'>EDUCATION</h2>
+                <h3 className='pt-4 pl-4 font-bold text-lg underline underline-offset-2'>Full stack web development 2021 - present</h3>
+                <p className='pl-4'>Coding Bootcamp at University of Adelaide</p>
+                <p className='pb-4 pl-4'>The program focused on gaining technical programming skills in web technologies like: React, Express.js Node.js, MongoDB. This also includes implementing technical solutions using MVC architecture and Object-oriented Programming principles.</p>
+
+            </div>
         </div>
     )
 }
